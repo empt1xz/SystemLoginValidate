@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, rgb(196, 237, 253) 5%, white 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input[type="email"] {
+  width: 310px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="password"], input[type=text] {
+  width: 289px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.errorr {
+  color: rgb(241, 65, 65);
+  margin-bottom: 10px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.or {
+  color: rgba(128, 128, 128, 0.699);
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.76);
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  width: 300px;
+  padding: 8px;
+  border-radius: 13px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.inputs {
+  background-color: #eff3f6;
+
+  border-radius: 10px;
+  width: 350px;
+  padding: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fgt {
+  width: 100%;
+  text-align: end;
+  padding-right: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.icn {
+  width: 100px;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0px 0px 12px rgba(128, 128, 128, 0.267);
+}
+
+form {
+  padding-top: 20px;
+  background: linear-gradient(0deg, white 70%, rgb(201, 250, 250));
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 13px gray;
+}
+
+form > h1 {
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.788);
+  margin-bottom: 5px;
+}
+
+.lg {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+  margin-bottom: 10px;
+}
+
+form > span {
+  color: rgba(139, 139, 139, 0.801);
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    padding: 10px;
+  }
+
+  .inputs {
+    width: 100%;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  .options {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icn {
+    width: 90px;
+  }
+
+  form > span {
+    width: 90%;
+    text-align: center;
+  }
+
+  .fgt {
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+
+  .options {
+    width: 90%;
+  }
+}
+
+
+
