@@ -1,4 +1,4 @@
-Sistema de Login feito com NextJS, Zod, React Hook Form para implementações futuras.
+Sistema de Login feito com NextJS, Zod, React Hook Form para futuras implementações.
 
 ## Como iniciar o projeto
 
